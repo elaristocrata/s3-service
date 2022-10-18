@@ -1,0 +1,11 @@
+version: '3'
+services:
+  s3Storage-Service:
+    image: elaristocrata/startshops3service:1.0.0
+    container_name: s3Storage-service
+    restart: on-failure
+    ports:
+      - 10555:9090
+    environment:
+      - AWS_KEY=${AWS_KEY}
+      - AWS_SECRET_KEY=${AWS_SECRET_KEY}

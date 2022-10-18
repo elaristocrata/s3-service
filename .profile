@@ -1,0 +1,2 @@
+export AWS_KEY=${AWS_KEY}
+export AWS_SECRET_KEY=${AWS_SECRET_KEY}
